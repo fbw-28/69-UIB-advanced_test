@@ -38,9 +38,3 @@
 ### Footer Links 
 * In the "Footer Links" section, add an unordered list beneath the h3 element. The unordered list should have a class of "icon-list". Inside the unordered list, add three list items. Each list item should have a class of "icon". Every list item should have an anchor link nested inside. Only add an "#" symbol to the href. Find three social media icons to place inside the anchor links, e.g. instagram, linked in, twitter.
 
-
-**Total**: 100 
-
-
-
-
