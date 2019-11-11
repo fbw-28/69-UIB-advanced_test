@@ -20,7 +20,7 @@
 * Give the header text padding on the right of `7rem` at the breakpoint of `768px`.
 
 ### Tables 
-* In the "Product Information" section, create a table with the structure below. The table should be placed beneath the h2 element.
+* In the "Product Information" section, create a table with the structure below. The table should be placed beneath the `h2` element.
 
 * Add a grey solid border to the table, table headers and table rows. Make sure the borders collapse into one border. Every odd row should be white, every even row should be grey. The table should take up `100%` of the width.
 
@@ -39,4 +39,4 @@
 * On focus, change the outline color of the input fields and textarea should change to blue.
 
 ### Footer Links 
-* In the "Footer Links" section, add an unordered list beneath the h3 element. The unordered list should have a class of `icon-list`. Inside the unordered list, add three list items. Each list item should have a class of `icon`. Every list item should have an anchor link nested inside. Only add an "#" symbol to the `href`. Find three social media icons to place inside the anchor links, e.g. instagram, linked in, twitter.
+* In the "Footer Links" section, add an unordered list beneath the `h3` element. The unordered list should have a class of `icon-list`. Inside the unordered list, add three list items. Each list item should have a class of `icon`. Every list item should have an anchor link nested inside. Only add an "#" symbol to the `href`. Find three social media icons to place inside the anchor links, e.g. instagram, linked in, twitter.
