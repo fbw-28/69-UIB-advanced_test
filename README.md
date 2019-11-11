@@ -1,7 +1,7 @@
 # Test - UI-Basics
 
 ## Test Instructions
-* In the test folder in this repo, there are both html and css files as well as an images folder which contain the foundations of a computer store landing page! 
+* In the [test folder](./test) in this repository, there are both html and css files as well as an images folder. These files contain the foundations of a computer store landing page! 
 * The task is to follow the instructions below to complete the landing page.
 * Good luck! 
 
