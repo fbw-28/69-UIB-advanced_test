@@ -33,7 +33,7 @@
 |**RAM**|4GB|16GB|8GB|
 
 ### Forms 
-* In the "Contact Form" section, create a form with an input field for the user's name, an input field for the user's email, textarea for a message and submit button. The submit button should have a class of `submit-btn`  The form should be placed beneath the `h2` element. Create `h4` elements for each input field and textarea e.g. "Tell us who you are", "Tell us how to contact you", "How can we help you?".
+* In the "Contact Form" section, create a form with an input field for the user's name, an input field for the user's email, textarea for a message and submit button. The submit button should have a class of `submit-btn`  The form should be placed beneath the `h2` element. Create `label` elements for each input field and textarea e.g. "Tell us who you are", "Tell us how to contact you", "How can we help you?".
 
 * Add types and placeholder text to the input fields and textarea. The first input field should have a type of text, the following placeholder text "Please fill in your full name" and it should have a `minimum length` of 1. The second input field should have a type of email, the following placeholder text "Please enter your email" and it should have a `minimum length` of 5. The textarea should have the following placeholder text: "Send us a message!" and it should have a `minimum length` of 1.
 * On focus, change the outline color of the input fields and textarea should change to blue.
