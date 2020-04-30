@@ -1,0 +1,199 @@
+:root {
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+main {
+    position: relative;
+    top: 12rem;
+}
+
+/* ----------- HEADER TASK------------------ */
+header {
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    text-align: right;
+    height: 10rem;
+    font-size: 1.3rem;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.65);
+    background: url(./images/hero.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+}
+
+header h1 {
+    padding-right: 1.3rem;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+li {
+    list-style: none;
+}
+
+.description,
+.information,
+.contact {
+    margin: 1rem;
+}
+
+
+/* ---------PRODUCT CARD TASK --------- */
+
+.product-card {
+    margin: 0.5rem 0.5rem 0 0.5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+}
+
+/* ------------------------------------- */
+.product-card p {
+    padding: .5rem;
+}
+
+.product-card,
+.product-card p {
+    border-top: 1px solid rgba(128, 128, 128, 0.65);
+}
+
+.products img {
+    width: 15rem;
+    height: 10rem;
+    padding: .5rem;
+}
+
+.products h2 {
+    text-align: center;
+}
+
+th,
+td {
+    padding: .5rem;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+form h4,
+h3 {
+    margin: 0.7rem 0 0.2rem 0;
+}
+
+/* ----------FORMS TASK----------- */
+input,
+textarea,
+.submit-btn {
+    padding: .5rem;
+    border: 1px solid rgba(128, 128, 128, 0.65);
+    margin-bottom: 10px;
+    margin-top: 3px;
+}
+
+input:focus,
+textarea:focus {
+    outline: 1px solid blue;
+}
+
+.submit-btn {
+    width: 10rem;
+    margin-top: 0.5rem;
+    background: none;
+}
+
+footer {
+    background-color: rgba(128, 128, 128, 0.32);
+    height: 15rem;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.icon-list {
+    display: flex;
+    justify-content: center;
+}
+
+.icon {
+    margin: 0 0.5rem 0 0.5rem;
+    font-size: 1.8rem;
+}
+
+textarea {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+/* ----------FONT AWESOME ICON---------- */
+
+a[target="_blank"]::after {
+    content: "\f35d";
+    font-family: "FontAwesome";
+}
+
+
+/* --------TABLE STRUCTURE-------- */
+
+table {
+    border-collapse: collapse;
+    border: 1px solid grey;
+    width: 100%;
+}
+
+table th {
+    border: 1px solid grey;
+}
+
+table td {
+    border: 1px solid grey;
+}
+
+table td {
+    border: 1px solid grey;
+}
+
+table tbody tr:nth-child(odd) {
+    background: #fff;
+}
+
+table tbody tr:nth-child(even) {
+    background: #ccc;
+}
+
+
+/*  -----------MOBILE VIEW------------ */
+
+@media screen and (max-width:768px) {
+    .product-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h1 {
+        padding-right: 7rem;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+}
