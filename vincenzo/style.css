@@ -165,11 +165,11 @@ table td {
     border: 1px solid grey;
 }
 
-table tr:nth-child(odd) {
+table tbody tr:nth-child(odd) {
     background: #fff;
 }
 
-table tr:nth-child(even) {
+table tbody tr:nth-child(even) {
     background: #ccc;
 }
 
