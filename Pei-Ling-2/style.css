@@ -71,6 +71,10 @@ li {
     display: flex;
 }
 
+.cards p {
+    text-align: center;
+}
+
 @media(max-width: 768px) {
     .cards {
         flex-direction: column;
