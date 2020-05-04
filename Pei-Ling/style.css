@@ -13,7 +13,17 @@ header {
     text-align: right;
     height: 10rem;
     font-size: 1.3rem;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.65);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.65);    
+    /* ### Positioning  */
+    position: fixed;
+    margin-top: 0;
+   
+    /* ### Images  */
+    background-image: url(./images/hero.jpg);    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 header h1 {
@@ -94,4 +104,45 @@ footer {
 .icon {
     margin: 0 0.5rem 0 0.5rem;
     font-size: 1.8rem;
+}
+
+/* ### Responsive Design */
+  @media only screen and (min-width: 769px) {
+    .cards {
+      display: flex;
+      flex-direction: row;
+    }
+    .products {align-items: center;
+    }    
+  }
+
+  @media only screen and (max-width: 768px) {
+    .cards {
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+        padding-right: 7rem;
+    }
+  }
+
+
+/* #### Table Data Structure */
+table {
+    margin: 10% auto;    
+    border-collapse: collapse;
+}
+
+th, tr, td {
+    border: 1px solid black;
+}
+
+
+
+.submit-btn {
+    
+}
+
+.contact {
+    line-height: 20px;
 }

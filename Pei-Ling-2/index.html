@@ -14,7 +14,7 @@
 <body>
 
     <!-- Header -->
-    <header>
+    <header class="header">
         <h1>Tech <br>Shop</h1>
     </header>
 
@@ -49,20 +49,19 @@
                 </section>
             </section>
         </section>
-        
+
         <!-- Product Information -->
         <section class="information">
-            <h2>Our Laptops</h2>
+            <h2>Our Laptops</h2>            
             <!-- table -->
-            <table class="items">
-                <tbody>
-                   <tr>
+            <table>
+                <tr>
                      <th>-</th>
                      <th>Lenovo</th>
                      <th>Dell</th>
                      <th>Macbook</th>
-                   </tr>
-                   <tr>
+                </tr>
+                <tr>
                     <td>**OS**</td>
                     <td>Ubuntu</td>
                     <td>Microsoft</td>
@@ -85,8 +84,7 @@
                     <td>4GB</td>
                     <td>16GB</td>
                     <td>8GB</td>
-                </tr>
-                </tbody>
+                </tr>                
                </table>
         </section>
 
@@ -94,47 +92,40 @@
         <section class="contact">
             <h2>Contact Us!</h2>
             <!-- form -->
-            <form action="">
-                <fieldset>
-                 <ul>
-                     <li>
-                        <label for="name">Tell us who you are</label>
-                        <input
-                          type="name"
-                          id="name"
-                          name="user_name"
-                          placeholder="Enter your name"
-                        />
-                        
-                     </li>
-                    <li>
-                        <label for="mail">Tell us how to contact you</label>
-                        <input
-                          type="email"
-                          id="mail"
-                          name="user_mail"
-                          placeholder="Enter email here"
-                        />
-                    </li>
-
-                    <li>
-                         <label for="msg">Message:</label>
-                         <textarea
-                          name="user_message"
-                         id="msg"
-                         cols="60"
-                         rows="10"
-                         maxlength="500"
-                         placeholder="How can we help you?"
-                         ></textarea>
-                    </li>
-                    <li>
-                        <button class="submit-btn" type="submit">Submit</button>
-                    </li>
-                 </ul>
-
-                </fieldset>
-            </form>
+            <form>
+                <ul>
+                  <li>
+                    <label for="name">Tell us who you are:</label>
+                    <input type="text" minlength="1" id="name" name="user_name" placeholder="Please fill in your full name"
+                    />
+                  </li>
+                  <li>
+                    <label for="mail">Tell us how to contact you:</label>
+                    <input
+                      type="email"
+                      minlength="5"
+                      id="mail"
+                      name="user_mail"
+                      placeholder="Please enter your email"
+                    />
+                  </li>
+                  <li>
+                    <label for="msg">How can we help you?</label>
+                    <textarea
+                      name="user_message"
+                      minlength="1"  
+                      maxlength="50"                    
+                      id="msg"
+                      cols="50"
+                      rows="5"
+                      placeholder="Send us a message!"
+                    ></textarea>
+                  </li>
+                  <li class="button">
+                    <button class="submit-btn" type="submit">Send us your message</button>
+                  </li>
+                </ul>
+              </form>
         </section>
 
         <!-- Footer Links -->
@@ -142,6 +133,13 @@
             <h2>Do you want to follow us?</h2> 
             <h3>Check out our social media pages!</h3>
             <!-- footer links -->
+            <ul class="icon-list">
+                <li class="icon"><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                <li class="icon"><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                <li class="icon"><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+            </ul>
+
+
         </footer>
     </main>
 </body>
