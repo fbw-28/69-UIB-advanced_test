@@ -1,0 +1,218 @@
+:root {
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+header {
+    text-align: right;
+    height: 10rem;
+    font-size: 1.3rem;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.65);
+    /* ### Images  */
+    background: url(./images/hero.jpg) no-repeat center;
+    background-size: cover;
+    /* (### Positioning 
+    * Change the position of the header to fixed. The header should be aligned at the top of the page and it should not cover any content of the website.) - isn't it already at the top? 
+    */
+}
+
+header h1 {
+    padding-right: 1.3rem;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+li {
+    list-style: none;
+}
+
+.description, .information, .contact {
+    margin: 1rem;
+}
+
+.product-card {
+    margin: 0.5rem 0.5rem 0 0.5rem;
+}
+
+.product-card p {
+    padding: .5rem;
+}
+
+.product-card, .product-card p {
+    border-top: 1px solid rgba(128, 128, 128, 0.65);
+}
+
+/* ### Attributes */
+.product-card a::after {
+    content: "\f35d";  
+    font-family: FontAwesome;
+ }
+
+.products img {
+    width: 15rem;
+    height: 10rem;
+    padding: .5rem;
+}
+
+.products h2 {
+    text-align: center;
+}
+
+/* ### Responsive Design */
+.cards {
+    display: flex;
+}
+
+.cards p {
+    text-align: center;
+}
+
+@media(max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(min-width: 769px) {
+    .cards {
+        flex-direction: row;
+        /* should I write flex-direction: row;? it already appeared in a row */
+        justify-content: center;
+        grid-template-rows: repeat(3, 1fr);
+        /* should I write grid-template-rows: repeat(3, 1fr);? it's flex instead of grid' */
+    }
+    .header h1 {
+        padding-right: 7em;
+    }
+}
+
+
+/* ### Tables  */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+table tr:nth-child(odd){
+    background: white;
+}
+
+table tr:nth-child(even){
+    background: grey;
+}
+
+
+th, td {
+    padding: .5rem;
+    text-align: center;
+    border: 1px solid gray;    
+}
+
+form {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+form h4, h3 {
+    margin: 0.7rem 0 0.2rem 0;
+}
+
+input, textarea, .submit-btn {
+    padding: .5rem;
+    border: 1px solid rgba(128, 128, 128, 0.65);
+}
+
+/* ### Forms  */
+
+form {
+    margin: 10% auto;
+    width: 60%;
+    /* border / outline */
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 0.5em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+form li + li {
+    margin-top: 1em;
+}
+
+label {
+    display: inline-block;
+    width: 200px;
+    text-align: right; 
+    /* align left seems to look better ?*/
+}
+
+input,
+textarea {
+    font: 1em sans-serif;
+    width: 60%;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    border-radius: 0.2em;
+}
+
+input:focus,
+textarea:focus {
+    outline: 1px solid black;
+    background: blue;
+}
+
+input,textarea::placeholder {
+    font-style: italic;
+} 
+
+input[type='email']:disabled {
+    background: #ccc;
+}
+
+textarea {
+    vertical-align: top;
+    height: 5em;
+}
+
+button {
+    margin-left: 6em;
+}
+
+.submit-btn {
+    width: 12rem;
+    margin-top: 0.5rem;
+    margin-left: 40%;
+    background: none;
+    border-radius: 0.2em;
+}
+
+footer {
+    background-color: rgba(128, 128, 128, 0.32);
+    height: 15rem;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.icon-list {
+    display: flex;
+    justify-content: center;
+}
+
+.icon {
+    margin: 0 0.5rem 0 0.5rem;
+    font-size: 1.8rem;
+}
